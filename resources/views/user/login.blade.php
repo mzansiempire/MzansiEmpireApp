@@ -10,7 +10,7 @@
 	</div>
 	<div class="sbox-content">
 	<div class="text-center  animated fadeInDown delayp1">
-		<img src="{{ asset('sximo/images/logo-sximo.png')}}" width="70" height="70" />
+		<img src="{{ asset('sximo/images/Mzansi-Empire-Logo.png')}}"  />
 	</div>	
 
 		<div class="ajaxLoading"></div>
@@ -55,8 +55,6 @@
 			<div class="form-group has-feedback  animated fadeInRight delayp1">
 				<label> Remember Me ?	</label>
 				<input type="checkbox" name="remember" value="1" />
-				
-				<i class="icon-lock form-control-feedback"></i>
 			</div>
 
 
