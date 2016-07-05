@@ -12,6 +12,12 @@
 		
 			
 					<tr>
+						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Date', (isset($fields['Created']['language'])? $fields['Created']['language'] : array())) }}</td>
+						<td>{{ date('dd-mm-yy',strtotime($row->Created)) }} </td>
+						
+					</tr>
+				
+					<tr>
 						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Subject', (isset($fields['Subject']['language'])? $fields['Subject']['language'] : array())) }}</td>
 						<td>{{ $row->Subject}} </td>
 						
@@ -26,12 +32,6 @@
 					<tr>
 						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Priority', (isset($fields['Priority']['language'])? $fields['Priority']['language'] : array())) }}</td>
 						<td>{{ $row->Priority}} </td>
-						
-					</tr>
-				
-					<tr>
-						<td width='30%' class='label-view text-right'>{{ SiteHelpers::activeLang('Date', (isset($fields['Created']['language'])? $fields['Created']['language'] : array())) }}</td>
-						<td>{{ $row->Created}} </td>
 						
 					</tr>
 				

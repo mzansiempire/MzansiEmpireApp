@@ -5,11 +5,13 @@
 	</head>
 	<body>
 		<h2>Hello {{ $firstname }} , </h2>
-		<p> Thank your for joining with our site </p>
+		<p> Thank your for joining our community, please share with others as well.  </p>
 		<p> Bellow is your account Info </p>
 		<p>
 			Email : {{ $email }} <br />
 			Password : {{ $password }}<br />
+
+                        Referral Link: {{ URL::to('user/activation?code='.$id) }}
 		</p>
 		<p> Please follow link activation  <a href="{{ URL::to('user/activation?code='.$code) }}"> Active my account now</a></p>
 		<p> If the link now working , copy and paste link bellow </p>
